@@ -1,0 +1,29 @@
+// This is your Prisma schema file
+
+// Define the data source (your database)
+datasource db {
+  provider = "postgresql"  // Database provider
+  url      = env("POSTGRES_PRISMA_URL")  // Connection string stored in an environment variable
+  directUrl= env("POSTGRES_URL_NON_POOLING")  // Optional non-pooling connection
+}
+
+// Generator block for Prisma Client
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Define the User model (table)
+model User {
+  id             Int      @id @default(autoincrement())  // Auto-incrementing primary key
+  email          String   @unique                       // Unique email for each user
+  name           String?                               // Optional full name
+  referralCode   String?  @unique                             // Placeholder for the link you mentioned
+  phoneNumber    String?                               // Optional phone number
+  githubProfile   String?                              // Optional GitHub profile link
+  linkedinProfile String?                              // Optional LinkedIn profile link
+  createdAt      DateTime @default(now())               // Automatically set when record is created
+  updatedAt      DateTime @updatedAt                    // Auto-updates when record is updated
+  teamId         String?
+  purpose        String?
+  University     String?
+}

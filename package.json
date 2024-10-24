@@ -1,5 +1,5 @@
 {
-  "name": "registration_portal",
+  "name": "parul-hackathon-registration-portal",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,12 +9,26 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "19.0.0-rc-69d4b800-20241021",
-    "react-dom": "19.0.0-rc-69d4b800-20241021",
-    "next": "15.0.1"
+    "@prisma/client": "^5.20.0",
+    "are-we-there-yet": "^4.0.2",
+    "debug": "^4.3.7",
+    "formidable": "^3.5.1",
+    "gauge": "^5.0.2",
+    "glob": "^11.0.0",
+    "googleapis": "^144.0.0",
+    "lru-cache": "^11.0.1",
+    "next": "14.2.15",
+    "next-auth": "^4.24.8",
+    "npmlog": "^7.0.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "rimraf": "^6.0.1",
+    "uuid": "^10.0.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "15.0.1"
+    "eslint-config-next": "14.2.15",
+    "prisma": "^5.20.0"
   }
 }
