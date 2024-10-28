@@ -2,7 +2,7 @@
   text-align: center;
   margin: 0;
   padding: 1rem;
-  font-size: clamp(2rem, 5vw, 6rem);
+  font-size: clamp(2rem, 5vw, 4rem);
   color: white;
   font-weight: 600;
   text-shadow: 0 0.5rem 0.5rem black;

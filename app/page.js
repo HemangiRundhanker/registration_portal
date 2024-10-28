@@ -108,7 +108,7 @@ export default function Home() {
             <section className={styles.logos}>
               {/* <img src="/images/GKM_logo.png" alt="" /> */}
               <img src="/images/byteLogo.png" alt="" />
-              <img src="/images/RYM_logo.png" alt="" />
+              {/* <img src="/images/RYM_logo.png" alt="" /> */}
               {/* <img src="/images/University_logo.png" alt="" /> */}
             </section>
           </div>
