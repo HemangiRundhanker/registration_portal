@@ -49,7 +49,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
     font-size: clamp(1.8rem, 3vw, 3rem);
-    margin: 0.5rem 0;
+    margin: 1rem 0;
     text-align: center;
     /* text-shadow: 0 0.1rem 0.3rem #391cb9; */
 }
@@ -84,7 +84,7 @@
     font-weight: 600;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: all 0.2s ease-in-out;
-    margin: 1rem 0;
+    margin: 1.5rem 0 2rem 0;
 }
 .registerbtn button:hover{
     transform: scale(1.05,1.05);
@@ -112,7 +112,7 @@
     width: 2.2rem;
 }
 .prize{
-    margin: 1.5rem 0;
+    margin: 1.5rem 0 0.5rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,12 +134,12 @@
     width: clamp(4rem, 4.5vw, 5rem);   
 } */
 .logos img:nth-child(1) {
-    height: clamp(1.8rem, 3.5vw, 3rem); /* Adjusting the height range */
-    width: clamp(2.5rem, 3.5vw, 3.5rem);     /* Scaling width using clamp */
+    height: clamp(1.8rem, 3.5vw, 3.5rem); /* Adjusting the height range */
+    width: clamp(2.5rem, 4vw, 3.5rem);     /* Scaling width using clamp */
 }
 .logos img:nth-child(2) {
-    height: clamp(1.4rem, 1.8vw, 1.9rem); /* Smaller range for height */
-    width: clamp(3.5rem, 4vw, 4.2rem);   /* Width values within the range */
+    height: clamp(1.4rem, 2vw, 1.9rem); /* Smaller range for height */
+    width: clamp(3.5rem, 4.5vw, 4.2rem);   /* Width values within the range */
 }
 /* .logos img:nth-child(4) {
     height: clamp(1.6rem, 2.2vw, 2.2rem); 
