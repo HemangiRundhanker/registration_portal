@@ -3,7 +3,7 @@ import prisma from "@/lib/prisma";
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
-    const { name, phoneNumber, email, university, purpose, referral, github } =req.body;
+    const { name, phoneNumber, email, school, purpose,program } =req.body;
     try {
       // Create user in the database
       const user = await prisma.user.create({
@@ -11,10 +11,9 @@ export default async function handler(req, res) {
           name,
           phoneNumber,
           email: email,
-          University:university,
+          school:school,
           purpose:purpose,
-          referralCode:referral,
-          githubProfile:github
+          program:program,
         },
       });
       return res.status(201).json(user); // Respond with the created user

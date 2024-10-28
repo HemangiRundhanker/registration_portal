@@ -76,7 +76,7 @@ export default function Home() {
                     <path d="M12 6v6l4 2" />
                   </svg>
                 </span>
-                Starts at 10 am
+                Starts at 10:50 am
               </p>
               <p>
                 <span>

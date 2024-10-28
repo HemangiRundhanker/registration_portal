@@ -15,7 +15,7 @@
     text-align: center;
     margin: 0;
     padding: 1rem;
-    font-size: clamp(1.5rem, 8vw, 4rem);
+    font-size: clamp(2.5rem, 8vw, 4rem);
     color: white;
     font-weight: 600;
     text-shadow: 0 0.5rem 0.5rem black;
@@ -56,10 +56,9 @@
 .textData .details h2{
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.7rem;
+    font-size: clamp(1.2rem, 1.5vw, 1.7rem);
     font-weight: lighter;
     margin: 0.8rem 0;
-    text-align: center;
 }
 .textData .details p{
     color: white;
@@ -122,6 +121,7 @@
     color: yellow;
     font-weight: bold;
     font-size: 1.7rem;
+    text-align:center;
 }
 .logos{
     display: flex;
@@ -134,8 +134,8 @@
     width: clamp(4rem, 4.5vw, 5rem);   
 } */
 .logos img:nth-child(1) {
-    height: clamp(1.8rem, 3.5vw, 3.5rem); /* Adjusting the height range */
-    width: clamp(2.5rem, 4vw, 3.5rem);     /* Scaling width using clamp */
+    height: clamp(2.8rem, 3.5vw, 3.5rem); /* Adjusting the height range */
+    width: clamp(3rem, 4vw, 3.5rem);     /* Scaling width using clamp */
 }
 .logos img:nth-child(2) {
     height: clamp(1.4rem, 2vw, 1.9rem); /* Smaller range for height */
@@ -149,10 +149,7 @@
 @media only screen and (max-width: 426px) {
     .card{
         justify-content: center;
-        margin-top: 12vh;
-    }
-    .header h1{
-        transform: translateY(10vh);
+        margin-top: 5vh;
     }
     .registerbtn button:hover{
         transform: scale(1,1);

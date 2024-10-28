@@ -14,9 +14,9 @@ export default function LandingPage() {
   const [formData, setFormData] = useState({
     phoneNumber: "",
     name: "",
-    university: "",
     purpose: "",
-    referral: "",
+    program:"",
+    school:""
   });
   const [studentCount, setStudentCount] = useState();
   const [isAdmin, setIsAdmin] = useState(false);
@@ -179,8 +179,7 @@ export default function LandingPage() {
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    required
-                    placeholder="e.g. Devam"
+                    requiredplaceholder="e.g. Devam"
                   />
                 </section>
                 <section>
@@ -191,28 +190,25 @@ export default function LandingPage() {
                     value={formData.phoneNumber}
                     onChange={handleInputChange}
                     required
-                    placeholder="e.g. 9155088251"
                   />
                 </section>
                 <section>
-                  <label htmlFor="university">University</label>
+                  <label htmlFor="school">School</label>
                   <input
                     type="text"
-                    name="university"
-                    value={formData.university}
+                    name="school"
+                    value={formData.school}
+                    onChange={handleInputChange}
+                  />
+                </section>
+                <section>
+                  <label htmlFor="program">Program</label>
+                  <input
+                    type="text"
+                    name="program"
+                    value={formData.program}
                     onChange={handleInputChange}
                     required
-                    placeholder="e.g. ABC University"
-                  />
-                </section>
-                <section>
-                  <label htmlFor="github">Github</label>
-                  <input
-                    type="text"
-                    name="github"
-                    value={formData.github}
-                    onChange={handleInputChange}
-                    placeholder="e.g. https://github.com/AryanSaini1303"
                   />
                 </section>
               </div>
@@ -230,45 +226,7 @@ export default function LandingPage() {
                     required
                     rows={screenWidth > 426 ? 5 : 3}
                     cols={screenWidth > 426 ? 5 : 3}
-                    placeholder="e.g. I want to participate because....."
                   />
-                </section>
-                <section className={styles.referral}>
-                  <label htmlFor={styles.referral}>
-                    {/* Referral code from Everdrawn */}
-                    Go to this link and Register
-                  </label>
-                  <button type="button">
-                    <a
-                      href="https://vision.hack2skill.com/event/google-aibuilderslab-9"
-                      target="_blank"
-                    >
-                      Create HACK2SKILL Login
-                    </a>
-                  </button>
-                  <input
-                    type="text"
-                    name="referral"
-                    value={formData.referral}
-                    onChange={handleInputChange}
-                    required
-                    placeholder={
-                      studentCount && isAdmin
-                        ? studentCount
-                        : "e.g. https://vision.hack2skill.com/dashboard/user_public_profile/?userId=670255dae48eaffdc67bc1a3&tabIndex=about"
-                    }
-                  />
-                  <h1
-                    style={{
-                      color: "white",
-                      fontSize: "clamp(0.7rem, 1vw, 1.2rem)",
-                      fontFamily: "monospace",
-                      margin: "0",
-                    }}
-                  >
-                    Go to: My Profile &rarr; Copy URL from tab &rarr; Paste
-                    Above{" "}
-                  </h1>
                 </section>
               </section>
               <br />
@@ -284,7 +242,6 @@ export default function LandingPage() {
                 className={styles.signOut}
                 type="button"
               >
-                {screenWidth < 427 ? (
                   <svg
                     viewBox="0 0 512 512"
                     fill="currentColor"
@@ -293,9 +250,6 @@ export default function LandingPage() {
                   >
                     <path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32v224c0 17.7 14.3 32 32 32s32-14.3 32-32V32zm-144.5 88.6c13.6-11.3 15.4-31.5 4.1-45.1s-31.5-15.4-45.1-4.1C49.7 115.4 16 181.8 16 256c0 132.5 107.5 240 240 240s240-107.5 240-240c0-74.2-33.8-140.6-86.6-184.6-13.6-11.3-33.8-9.4-45.1 4.1s-9.4 33.8 4.1 45.1c38.9 32.3 63.5 81 63.5 135.4 0 97.2-78.8 176-176 176s-176-78.8-176-176c0-54.4 24.7-103.1 63.5-135.4z" />
                   </svg>
-                ) : (
-                  "Sign Out"
-                )}
               </button>
             </form>
           </div>
