@@ -180,7 +180,7 @@
     flex-direction: column;
   }
   .card {
-    height: 88vh;
+    height: 70vh;
   }
   .referral button:hover {
     box-shadow: none;
