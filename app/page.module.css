@@ -15,7 +15,7 @@
     text-align: center;
     margin: 0;
     padding: 1rem;
-    font-size: clamp(1.5rem, 8vw, 4.5rem);
+    font-size: clamp(1.5rem, 8vw, 4rem);
     color: white;
     font-weight: 600;
     text-shadow: 0 0.5rem 0.5rem black;
@@ -51,7 +51,7 @@
     font-size: clamp(1.8rem, 3vw, 3rem);
     margin: 0.5rem 0;
     text-align: center;
-    text-shadow: 0 0.1rem 0.3rem #391cb9;
+    /* text-shadow: 0 0.1rem 0.3rem #391cb9; */
 }
 .textData .details h2{
     color: white;
@@ -87,14 +87,14 @@
     margin: 1rem 0;
 }
 .registerbtn button:hover{
-    transform: scale(1.01,1.01);
-    box-shadow: 0.5rem 0.5rem 0.3rem #391cb9;
+    transform: scale(1.05,1.05);
+    /* box-shadow: 0.5rem 0.5rem 0.3rem #391cb9; */
     cursor: pointer;
 }
 .registerbtn button:active{
     transform: scale(1,1);
     opacity: 0.5;
-    box-shadow: 0.2rem 0.2rem 0.3rem #391cb9;
+    /* box-shadow: 0.2rem 0.2rem 0.3rem #391cb9; */
 }
 .specifics{
     display: flex;
@@ -108,43 +108,43 @@
     margin: 0 0.4rem;
 }
 .prize>img{
-    height: 3.5rem;
-    width: 3rem;
+    height: 2.8rem;
+    width: 2.2rem;
 }
 .prize{
-    margin: 0.5rem 0;
+    margin: 1.5rem 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
 }
-.prize h5:nth-child(2){
+.prize h5{
     color: yellow;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
 }
 .logos{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     gap: clamp(0.8rem, 1.5vw, 2rem);
 }
+/* .logos img:nth-child(1) {
+    height: clamp(1.5rem, 2vw, 2.2rem);
+    width: clamp(4rem, 4.5vw, 5rem);   
+} */
 .logos img:nth-child(1) {
-    height: clamp(1.5rem, 2vw, 2.2rem); /* Minimum, preferred (2vw), maximum */
-    width: clamp(4rem, 4.5vw, 5rem);   /* Adjusting based on viewport width */
+    height: clamp(1.8rem, 3.5vw, 3rem); /* Adjusting the height range */
+    width: clamp(2.5rem, 3.5vw, 3.5rem);     /* Scaling width using clamp */
 }
 .logos img:nth-child(2) {
-    height: clamp(1.8rem, 2.5vw, 2.5rem); /* Adjusting the height range */
-    width: clamp(2.5rem, 3vw, 3rem);     /* Scaling width using clamp */
-}
-.logos img:nth-child(3) {
     height: clamp(1.4rem, 1.8vw, 1.9rem); /* Smaller range for height */
     width: clamp(3.5rem, 4vw, 4.2rem);   /* Width values within the range */
 }
-.logos img:nth-child(4) {
-    height: clamp(1.6rem, 2.2vw, 2.2rem); /* Similar adjustment */
-    width: clamp(4.2rem, 5vw, 5.5rem);   /* Adjusted width range */
-}
+/* .logos img:nth-child(4) {
+    height: clamp(1.6rem, 2.2vw, 2.2rem); 
+    width: clamp(4.2rem, 5vw, 5.5rem);   
+} */
 
 @media only screen and (max-width: 426px) {
     .card{
