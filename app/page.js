@@ -26,7 +26,7 @@ export default function Home() {
     <>
       <BackgroundVideo />
       <section className={styles.header}>
-        <h1>BYTE QUIZ</h1>
+        <h1>BYTE ARENA</h1>
       </section>
       <section className={styles.card}>
         <div className={styles.textData}>
