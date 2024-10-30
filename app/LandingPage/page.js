@@ -179,7 +179,7 @@ export default function LandingPage() {
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    requiredplaceholder="e.g. Devam"
+                    required
                   />
                 </section>
                 <section>
@@ -199,6 +199,7 @@ export default function LandingPage() {
                     name="school"
                     value={formData.school}
                     onChange={handleInputChange}
+                    required
                   />
                 </section>
                 <section>
@@ -207,6 +208,26 @@ export default function LandingPage() {
                     type="text"
                     name="program"
                     value={formData.program}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </section>
+                <section>
+                  <label htmlFor="year">Year</label>
+                  <input
+                    type="text"
+                    name="year"
+                    value={formData.year}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </section>
+                <section>
+                  <label htmlFor="enrollmentNum">Enrollment</label>
+                  <input
+                    type="text"
+                    name="enrollmentNum"
+                    value={formData.enrollmentNum}
                     onChange={handleInputChange}
                     required
                   />
@@ -224,8 +245,8 @@ export default function LandingPage() {
                     value={formData.purpose}
                     onChange={handleInputChange}
                     required
-                    rows={screenWidth > 426 ? 5 : 3}
-                    cols={screenWidth > 426 ? 5 : 3}
+                    rows={screenWidth > 426 ? 2 : 2}
+                    cols={screenWidth > 426 ? 2 : 2}
                   />
                 </section>
               </section>

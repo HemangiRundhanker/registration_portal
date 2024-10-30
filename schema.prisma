@@ -23,4 +23,6 @@ model User {
   purpose        String?
   program        String?
   school          String?
+  batchYear           String?
+  enrollmentNum  String?
 }
