@@ -247,6 +247,7 @@ export default function LandingPage() {
                     required
                     rows={screenWidth > 426 ? 2 : 2}
                     cols={screenWidth > 426 ? 2 : 2}
+                    placeholder={isAdmin?studentCount:null}
                   />
                 </section>
               </section>
